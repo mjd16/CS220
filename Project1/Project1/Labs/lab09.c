@@ -20,12 +20,14 @@ int partition(int numbers[], int lBound, int rBound);
 void print(int nums[], int n);
 
 int main() {
-    int nums[N];
+    //int nums[N];
+    int nums[] = {10, 3, 2, 11, 17, 1, 9, 6 };
 
     /* TASK 0 - implement the function, quickSort() below
      * Help - the partition prototype is given to you above
      */
-    fillArray(nums);
+    //fillArray(nums);
+     
     print(nums, N);
     quickSort(nums,0,N-1);
     print(nums, N);
@@ -43,15 +45,16 @@ int main() {
 int partition(int numbers[], int lBound, int rBound) {
     int l = 0;
     int h = 0;
-    int mid = numbers[l + ((lBound + rBound) / 2)];
+    int mid = (l + ((lBound + rBound) / 2));
+    int pivot = numbers[mid];
     l = lBound;
     h = rBound;
     bool done = false;
     while (!done) {
-        while (numbers[l] < mid) {
+        while (numbers[l] < pivot) {
             l++;
         }
-        while (numbers[h] > mid) {
+        while (numbers[h] > pivot) {
             h--;
         }
         if (l >= h)
@@ -77,6 +80,10 @@ void quickSort(int numbers[], int lBound, int rBound) {
     if (lBound >= rBound)
         return;
     int mid = partition(numbers, lBound, rBound);
+    for (int i = 0; i < N; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
     quickSort(numbers, lBound, mid);
     quickSort(numbers, mid + 1, rBound);
 }
