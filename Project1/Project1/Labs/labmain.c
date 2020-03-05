@@ -3,27 +3,24 @@
 //
 
 #include <stdio.h>
-#include "listAsLinkedList (1).h"
+#include "bstAsLinkedDS.h"
 
 int main() {
-    LinkedList* list = createLinkedList();
-    appendElementLinkedList(list, 1);
-    appendElementLinkedList(list, 2);
-    appendElementLinkedList(list, 3);
-    appendElementLinkedList(list, 4);
-    appendElementLinkedList(list, 6);
+    BSTnode* nodel = NULL;
+    nodel = insertBST(nodel, 15);
+    nodel = insertBST(nodel, 10);
+    nodel = insertBST(nodel, 22);
+    nodel = insertBST(nodel, 7);
+    nodel = insertBST(nodel, 12);
+    nodel = insertBST(nodel, 17);
+    nodel = insertBST(nodel, 24);
 
-    int len = lengthOfLinkedList(list);
-    printf("%d\n is the length\n", len);
-    printLinkedList(list);
-
-    printf("\nInserting element 4 at position 4\n");
-    insertElementLinkedList(list, 4, 5);
-    printLinkedList(list);
-    printf("\nDeleting element 1st\n");
-    deleteElementLinkedList(list, 0);
-    printLinkedList(list);
-
-
+    printInorderBST(nodel);
+    printf("\n");
+    printPostorderBST(nodel);
+    printf("\n");
+    printPreorderBST(nodel);
+    printf("\n");
+          
     return 1;
 }
