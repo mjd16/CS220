@@ -1,11 +1,8 @@
 /** listAsLinkedList.h
 * ================================================================
-* Name: first last
-* Section: xxx
-* Project: Header for Linked List Library
-*
-* Instructions:  Complete the implementation file for this header file
-* 
+* Name: Maxwell Di Lalla
+* Section: T2
+* Project: Linked List Library Header
 * =================================================================
 */
 #ifndef USAFA_CS220_S20_STUDENT_LISTASLINKEDLIST_H

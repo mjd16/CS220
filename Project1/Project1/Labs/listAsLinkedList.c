@@ -1,6 +1,10 @@
-
-
-
+/** listAsLinkedList.c
+* ================================================================
+* Name: Maxwell Di Lalla
+* Section: T2
+* Project: Linked List Library .c
+* =================================================================
+*/
 #include <stdio.h>
 #include "listAsLinkedList (1).h"
 
@@ -51,17 +55,6 @@ void appendElementLinkedList(LinkedList* list, int element) {
 
 int lengthOfLinkedList(LinkedList* list) {
 	return list->numberOfElements;
-	/*int ret = 0;
-	if (list->head == NULL)
-		return 0;
-	
-	Node* point = list->head;
-
-	while (point != NULL) {
-		ret++;
-		point = point->next;
-	}
-	return ret;*/
 }
 
 void printLinkedList(LinkedList* list) {
