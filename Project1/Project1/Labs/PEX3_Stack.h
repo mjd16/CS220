@@ -5,6 +5,8 @@
 * Project: PEX 3 RPN Calculator
 * ===========================================================
 */
+#ifndef PEX3_Stack_h
+#define PEX3_Stack_h
 #include <stdbool.h>
 #include "listAsLinkedList.h"
 
@@ -42,3 +44,4 @@ int stackPeek(Stack stack);
  * @param stack is a pointer to the stack
  * @return size of stack */
 int stackSize(Stack stack);
+#endif

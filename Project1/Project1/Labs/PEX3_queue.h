@@ -5,6 +5,9 @@
 * Project: PEX 3 RPN Calculator
 * ===========================================================
 */
+
+#ifndef PEX3_queue_h
+#define PEX3_queue_h
 #include <stdbool.h>
 #include "listAsLinkedList.h"
 
@@ -41,3 +44,4 @@ int queuePeek(Queue queue);
  * @param queue is a pointer to the queue
  * @return the size of the queue */
 int queueSize(Queue queue);
+#endif
