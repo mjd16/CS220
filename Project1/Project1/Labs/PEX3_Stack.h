@@ -27,7 +27,7 @@ int stackPop(Stack* stack);
 
 /** display() - outputs the stack to the console
  * @param stack - the stack */
-void display(Stack stack);
+void displayStack(Stack stack);
 
 /** stackIsEmpty() determines if stack is empty
  * @param stack is a pointer to the stack

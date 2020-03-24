@@ -16,7 +16,7 @@ typedef struct node {
 } Node;
 
 // Define the type (meta-data) that manages the linked list of nodes
-typedef struct {
+typedef struct LinkedList{
     Node* head;
     Node* tail;
     int numberOfElements;

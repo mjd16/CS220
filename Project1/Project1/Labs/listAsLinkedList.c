@@ -3,10 +3,11 @@
 * Name: Maxwell Di Lalla
 * Section: T2
 * Project: Linked List Library .c
+* Documentation: This is just the library off of canvas, work is not my own.
 * =================================================================
 */
 #include <stdio.h>
-#include "listAsLinkedList (1).h"
+#include "listAsLinkedList.h"
 
 
 LinkedList* createLinkedList() {

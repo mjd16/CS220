@@ -2,7 +2,9 @@
 * ===========================================================
 * Name: Max Di Lalla
 * Section: T2
-* Project: PEX 3 RPN Calculator
+* Project: PEX 3 RPN Calculator Queue
+* Documentation: I called all the functions provide in the linked list library provided on canvas.
+* I also followed along with the provided queue file on canvas while writing mine to ensure it was right.
 * ===========================================================
 */
 #include "PEX3_Queue.h"
@@ -31,7 +33,7 @@ int queueDequeue(Queue* queue) {
 
 /** display() - prints the queue
  * @param queue is the queue  */
-void display(Queue queue) {
+void displayQueue(Queue queue) {
     printLinkedList(&queue);
 }
 

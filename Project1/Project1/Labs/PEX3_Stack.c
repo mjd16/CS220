@@ -2,7 +2,9 @@
 * ===========================================================
 * Name: Max Di Lalla
 * Section: T2
-* Project: PEX 3 RPN Calculator
+* Project: PEX 3 RPN Calculator Stack
+* Documentation: I called all the functions that are provided in linked list library provided on canvas.
+* I also referenced the stack file provided when writing my file to ensure it is right.
 * ===========================================================
 */
 #include "PEX3_Stack.h"
@@ -32,7 +34,7 @@ int stackPop(Stack* stack) {
 
 /** display() - outputs the stack to the console
  * @param stack - the stack */
-void display(Stack stack) {
+void displayStack(Stack stack) {
     printLinkedList(&stack);
 }
 

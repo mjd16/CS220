@@ -9,6 +9,7 @@
 #ifndef PEX3_queue_h
 #define PEX3_queue_h
 #include <stdbool.h>
+#include <stdio.h>
 #include "listAsLinkedList.h"
 
 typedef LinkedList Queue;
@@ -28,7 +29,7 @@ int queueDequeue(Queue* queue);
 
 /** display() - prints the queue
  * @param queue is the queue  */
-void display(Queue queue);
+void displayQueue(Queue queue);
 
 /** queueIsEmpty() - reutrns true if empty
  * @param queue is a pointer to the queue
